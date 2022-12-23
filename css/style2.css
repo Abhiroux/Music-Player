@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+*{
+    font-family: 'Varela Round', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    min-height: 100vh;
+    overflow-y: hidden;
+}
+/* body::-webkit-scrollbar{
+    display: none;
+} */
+.container{
+    height: 80vh;
+    width: 70%;
+    margin: 10px auto;
+    border-radius: 20px;
+    background: url('../images/366a1002ddb5de2ff883131538d632a6.jpg') center;
+    background-size: cover;
+
+}
+.songList{
+    height: 75%;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.bottom{
+    height: 120px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+}
+
+.img-section{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+#myProgressBar{
+    width: 80%;
+    cursor: pointer;
+    color: green;
+}
+.icons i{
+    cursor: pointer;
+}
+
+.media{
+    background-color: rgba(255, 255, 255, 0.63);
+    color: black;
+    border-radius: 34px;
+    width: 55%;
+    
+}
+
+.media-body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.media-body img{
+    margin: 0px 10px;
+    border-radius: 34px;
+}
+
+.songListPlay i{
+    cursor: pointer;
+}
+
+#songInfo img{
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+    height: 45px;
+}
+
+.fa-solid:hover,.fa-regular:hover{
+    color:#1DB954;
+}
+.dropup{
+     position: absolute;
+     right: 9em;
+     bottom: 20px;
+}
+
+
+/*scrollbar desing*/
+::-webkit-scrollbar {
+    width: 10px;          
+ }
+  
+ ::-webkit-scrollbar-thumb {   
+   border-radius: 30px;
+   background: -webkit-gradient(linear,left top,left bottom,from(#ff8a00),to(#da1b60));
+   box-shadow: inset 2px 2px 2px rgba(255,255,255,.25), inset -2px -2px 2px rgba(0,0,0,.25);}
+  
+ ::-webkit-scrollbar-track {     
+   background-color: transparent;
+   background: linear-gradient(to right,#201c29,#201c29 1px,#100e17 1px,#100e17);
+ }
+ 
+.other img{
+    filter: invert(100%);
+    position: absolute;
+    right: 8.1em;
+    bottom: 4.5em;
+}
+.right-side{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
